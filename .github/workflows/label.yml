@@ -20,3 +20,7 @@ jobs:
     - uses: actions/labeler@v2
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
+    - name: Merge pull requests (automerge-action)
+      uses: pascalgn/automerge-action@v0.14.3
+      env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
