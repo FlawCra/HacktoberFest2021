@@ -20,7 +20,16 @@ jobs:
     - uses: actions/labeler@v2
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
-    - name: Merge pull requests (automerge-action)
-      uses: pascalgn/automerge-action@v0.14.3
-      env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+    - name: Automatically Merge PR
+      uses: plm9606/automerge_actions@1.2.2
+      with:
+        # The label name to automatically merge. Default is "automerge".
+        label-name: hacktoberfest
+        # The number of reviewers to automatically merge. Default is 1.
+        reviewers-number: 0
+        # The merge method ("merge", "squash", "rebase"). Default is "merge"
+        merge-method: squash
+        # Let the bot delete the merged branch. true or false.
+        auto-delete: false
+        # GitHub WebHook Secret Token
+        github-token: ${{ secrets.GITHUB_TOKEN }}
