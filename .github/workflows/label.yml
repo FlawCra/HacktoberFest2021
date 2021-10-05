@@ -17,6 +17,9 @@ jobs:
       pull-requests: write
 
     steps:
+    - uses: hmarr/auto-approve-action@v2
+      with:
+        github-token: "${{ secrets.GITHUB_TOKEN }}"
     - uses: actions/labeler@v2
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
