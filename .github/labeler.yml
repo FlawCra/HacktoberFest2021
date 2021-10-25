@@ -1,6 +1,4 @@
 hacktoberfest:
-- '*'
-- '**/*'
+- any: ['*','**/*']
 hacktoberfest-accepted:
-- '*'
-- '**/*'
+- any: ['*','**/*']
