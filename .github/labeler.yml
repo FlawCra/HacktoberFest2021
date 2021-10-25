@@ -1,4 +1,6 @@
 hacktoberfest:
 - '*'
+- '**/*'
 hacktoberfest-accepted:
 - '*'
+- '**/*'
