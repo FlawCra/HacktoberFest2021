@@ -10,3 +10,4 @@ We hope you submit some kind of useful code to this repository.
 
 The format for submitting code is:
 `Your programming language name`/`function name.extension`
+(If the folder doesn't exist yet, please go ahead an create it)
